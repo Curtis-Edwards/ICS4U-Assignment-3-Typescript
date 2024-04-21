@@ -68,10 +68,10 @@ export default class Triangle {
   * Calculates the area
   */
   public area(): number {
-    return Math.sqrt(semiPerimeter()
-      * (semiPerimeter() - this.sideA)
-      * (semiPerimeter() - this.sideB)
-      * (semiPerimeter() - this.sideC)
+    return Math.sqrt(this.semiPerimeter()
+      * (this.semiPerimeter() - this.sideA)
+      * (this.semiPerimeter() - this.sideB)
+      * (this.semiPerimeter() - this.sideC)
     )
   }
 
