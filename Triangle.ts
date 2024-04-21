@@ -154,6 +154,6 @@ export default class Triangle {
     let area: number
     radius = (this.sideA * this.sideB * this.sideC) / (4 * this.area())
     area = Math.PI * (radius ** 2)
-    return area
+    return radius
   }
 }
