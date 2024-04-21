@@ -15,10 +15,10 @@ export class Triangle {
   /*
   * Constructor.
   */
-  constructor(sideA: number, sideC: number, sideC: number) {
-    this.sideA = sideA
-    this.sideB = sideB
-    this.sideC = sideC
+  constructor(side1: number, side2: number, side3: number) {
+    this.sideA = side1
+    this.sideB = side2
+    this.sideC = side3
   }
 
   /*
