@@ -86,21 +86,21 @@ export default class Triangle {
         ((this.sideB ** 2) + (this.sideC ** 2) - (this.sideA ** 2))
         / (2 * this.sideB * this.sideC)
       )
-      angleInRadians = angleInDegrees * (Math.PI / 180)
+      //angleInRadians = angleInDegrees * (Math.PI / 180)
     } else if (angleNumber === 2) {
       angleInDegrees = Math.acos(
         ((this.sideC ** 2) + (this.sideA ** 2) - (this.sideB ** 2))
         / (2 * this.sideC * this.sideA)
       )
-      angleInRadians = angleInDegrees * (Math.PI / 180)
+      //angleInRadians = angleInDegrees * (Math.PI / 180)
     } else if (angleNumber === 3) {
       angleInDegrees = Math.acos(
         ((this.sideA ** 2) + (this.sideB ** 2) - (this.sideC ** 2))
         / (2 * this.sideA * this.sideB)
       )
-      angleInRadians = angleInDegrees * (Math.PI / 180)
+      //angleInRadians = angleInDegrees * (Math.PI / 180)
     }
-    return angleInRadians
+    return angleInDegrees
   }
 
   /*
