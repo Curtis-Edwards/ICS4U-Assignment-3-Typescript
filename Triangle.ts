@@ -130,11 +130,11 @@ export default class Triangle {
   public height(sideNumber: number): number {
     let height: number
     if (sideNumber === 1) {
-      height = 2 * this.area / this.sideA
+      height = 2 * this.area() / this.sideA
     } else if (sideNumber === 2) {
-      height = 2 * this.area / this.sideB
+      height = 2 * this.area() / this.sideB
     } else if (sideNumber === 3) {
-      height = 2 * this.area / this.sideC
+      height = 2 * this.area() / this.sideC
     }
     return height
   }
