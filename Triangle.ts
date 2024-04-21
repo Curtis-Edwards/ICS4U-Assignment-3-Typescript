@@ -142,14 +142,14 @@ export default class Triangle {
   /*
   * Calculates the inner circle radius
   */
-  /*public innerCircleRadius(): number {
-
+  public innerCircleRadius(): number {
+    return this.area() / this.semiPerimeter()
   }
 
   /*
   * Calculates the circumsicle radius
   */
-  /*public circumsicleRadius(): number {
+  public circumcicleRadius(): number {
 
   }*/
 }
