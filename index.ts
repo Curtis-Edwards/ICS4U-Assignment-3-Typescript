@@ -19,10 +19,10 @@ console.log(' → Type: ' + testTriangle1.getType())
 console.log(' → Angle 1: ' + testTriangle1.angle(1).toFixed(4) + ' rad')
 console.log(' → Angle 2: ' + testTriangle1.angle(2).toFixed(4) + ' rad')
 console.log(' → Angle 3: ' + testTriangle1.angle(3).toFixed(4) + ' rad')
-/*
 console.log(' → Height 1: ' + testTriangle1.height(1).toFixed(4) + ' mm')
 console.log(' → Height 2: ' + testTriangle1.height(2).toFixed(4) + ' mm')
 console.log(' → Height 3: ' + testTriangle1.height(3).toFixed(4) + ' mm')
+/*
 console.log(' → Inner circle radius: ' + testTriangle1.innerCircleRadius().toFixed(4) + ' mm')
 console.log(' → Circumcircle radius: ' + testTriangle1.circumsicleRadius().toFixed(4) + ' mm')
 console.log('')
