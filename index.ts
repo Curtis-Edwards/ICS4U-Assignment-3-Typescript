@@ -25,7 +25,7 @@ console.log(' → Height 3: ' + testTriangle1.height(3).toFixed(4) + ' mm')
 console.log(' → Inner circle radius: ' + testTriangle1.innerCircleRadius().toFixed(4) + ' mm')
 console.log(' → Circumcircle radius: ' + testTriangle1.circumsicleRadius().toFixed(4) + ' mm')
 console.log('')
-/*
+
 const testTriangle2 = new Triangle(3, 3, 3)
 console.log('Created a 3 mm by 3 mm by 3 mm triangle.')
 console.log(' → Is the triangle valid: ' + testTriangle2.isValid().toString())
@@ -73,7 +73,7 @@ console.log(' → Height 3: ' + testTriangle4.height(3).toFixed(4) + ' mm')
 console.log(' → Inner circle radius: ' + testTriangle4.innerCircleRadius().toFixed(4) + ' mm')
 console.log(' → Circumcircle radius: ' + testTriangle4.circumsicleRadius().toFixed(4) + ' mm')
 console.log('')
-
+/*
 const testTriangle5 = new Triangle(23, 4, 6)
 console.log('Created a 23 mm by 3 mm by 4 mm triangle.')
 console.log(' → Is the triangle valid: ' + testTriangle5.isValid().toString())
