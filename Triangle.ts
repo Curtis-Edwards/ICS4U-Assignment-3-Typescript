@@ -104,7 +104,11 @@ export default class Triangle {
   */
   public getType(): string {
     let triangleType: string
-    if (this.sideA == this.sideB == this.sideC) {
+    if (
+      this.sideA === this.sideB &&
+      this.sideB === this.sideC &&
+      this.sideC === this.sideA
+    ) {
       triangleType = "Equilateral triangle"
     } else if (
       this.angle(1) === (Math.PI / 2) ||
