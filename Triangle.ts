@@ -150,10 +150,6 @@ export default class Triangle {
   * Calculates the circumsicle radius
   */
   public circumsicleRadius(): number {
-    let radius: number
-    let area: number
-    radius = (this.sideA * this.sideB * this.sideC) / (4 * this.area())
-    area = Math.PI * (radius ** 2)
-    return radius
+    return (this.sideA * this.sideB * this.sideC) / (4 * this.area())
   }
 }
