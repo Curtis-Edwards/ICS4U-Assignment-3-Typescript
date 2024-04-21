@@ -79,28 +79,24 @@ export default class Triangle {
   * Calculates each angle of the triangle
   */
   public angle(angleNumber: number): number {
-  let angleInDegrees: number
-  let angleInRadians: number
+  let angle: number
     if (angleNumber === 1) {
-      angleInDegrees = Math.acos(
+      angle = Math.acos(
         ((this.sideB ** 2) + (this.sideC ** 2) - (this.sideA ** 2))
         / (2 * this.sideB * this.sideC)
       )
-      //angleInRadians = angleInDegrees * (Math.PI / 180)
     } else if (angleNumber === 2) {
-      angleInDegrees = Math.acos(
+      angle = Math.acos(
         ((this.sideC ** 2) + (this.sideA ** 2) - (this.sideB ** 2))
         / (2 * this.sideC * this.sideA)
       )
-      //angleInRadians = angleInDegrees * (Math.PI / 180)
     } else if (angleNumber === 3) {
-      angleInDegrees = Math.acos(
+      angle = Math.acos(
         ((this.sideA ** 2) + (this.sideB ** 2) - (this.sideC ** 2))
         / (2 * this.sideA * this.sideB)
       )
-      //angleInRadians = angleInDegrees * (Math.PI / 180)
     }
-    return angleInDegrees
+    return angle
   }
 
   /*
@@ -131,7 +127,7 @@ export default class Triangle {
   /*
   * Calculates each height of the triangle
   */
-  /*public height(sideNumber: number): number {
+  public height(sideNumber: number): number {
 
   }
 
