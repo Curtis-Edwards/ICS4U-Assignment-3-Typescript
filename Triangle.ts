@@ -79,7 +79,7 @@ export default class Triangle {
   * Calculates each angle of the triangle
   */
   public angle(angleNumber: number): number {
-  let angle: number
+    let angle: number
     if (angleNumber === 1) {
       angle = Math.acos(
         ((this.sideB ** 2) + (this.sideC ** 2) - (this.sideA ** 2))
@@ -128,7 +128,15 @@ export default class Triangle {
   * Calculates each height of the triangle
   */
   public height(sideNumber: number): number {
-
+    let height: number
+    if (sideNumber === 1) {
+      height = 2 * this.area / this.sideA
+    } else if (sideNumber === 2) {
+      height = 2 * this.area / this.sideB
+    } else if (sideNumber === 3) {
+      height = 2 * this.area / this.sideC
+    }
+    return height
   }
 
   /*
