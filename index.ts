@@ -6,7 +6,7 @@
 * @since   2024-04-21
 */
 
-import { Triangle } from './Triangle'
+import Triangle from './Triangle'
 
 console.log('')
 
