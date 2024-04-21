@@ -15,11 +15,11 @@ console.log('Created a 3 mm by 4 mm by 5 mm triangle.')
 console.log(' → Is the triangle valid: ' + testTriangle1.isValid().toString())
 console.log(' → Semiperimeter: ' + testTriangle1.semiPerimeter().toFixed(4) + ' mm')
 console.log(' → Area: ' + testTriangle1.area().toFixed(4) + ' mm²')
-/*
 console.log(' → Type: ' + testTriangle1.getType())
 console.log(' → Angle 1: ' + testTriangle1.angle(1).toFixed(4) + ' rad')
 console.log(' → Angle 2: ' + testTriangle1.angle(2).toFixed(4) + ' rad')
 console.log(' → Angle 3: ' + testTriangle1.angle(3).toFixed(4) + ' rad')
+/*
 console.log(' → Height 1: ' + testTriangle1.height(1).toFixed(4) + ' mm')
 console.log(' → Height 2: ' + testTriangle1.height(2).toFixed(4) + ' mm')
 console.log(' → Height 3: ' + testTriangle1.height(3).toFixed(4) + ' mm')
