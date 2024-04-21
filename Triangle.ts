@@ -61,7 +61,7 @@ export default class Triangle {
   * Calculates the semi-perimeter
   */
   public semiPerimeter(): number {
-    if (isValid() === false) {
+    if (this.isValid() === false) {
       return -1
     } else {
       return (this.sideA + this.sideB + this.sideC) / 2
@@ -72,7 +72,7 @@ export default class Triangle {
   * Calculates the area
   */
   public area(): number {
-    if (isValid() === false) {
+    if (this.isValid() === false) {
       return -1
     } else {
       return Math.sqrt(this.semiPerimeter()
@@ -87,7 +87,7 @@ export default class Triangle {
   * Calculates each angle of the triangle
   */
   public angle(angleNumber: number): number {
-    if (isValid() === false) {
+    if (this.isValid() === false) {
       return -1
     } else {
       let angle: number
@@ -115,7 +115,7 @@ export default class Triangle {
   * Finds the type of triangle
   */
   public getType(): string {
-    if (isValid() === false) {
+    if (this.isValid() === false) {
       return -1
     } else {
       let triangleType: string
@@ -148,7 +148,7 @@ export default class Triangle {
   * Calculates each height of the triangle
   */
   public height(sideNumber: number): number {
-    if (isValid() === false) {
+    if (this.isValid() === false) {
       return -1
     } else {
       let height: number
@@ -167,7 +167,7 @@ export default class Triangle {
   * Calculates the inner circle radius
   */
   public innerCircleRadius(): number {
-    if (isValid() === false) {
+    if (this.isValid() === false) {
       return -1
     } else {
       return this.area() / this.semiPerimeter()
@@ -178,7 +178,7 @@ export default class Triangle {
   * Calculates the circumsicle radius
   */
   public circumsicleRadius(): number {
-    if (isValid() === false) {
+    if (this.isValid() === false) {
       return -1
     } else {
       return (this.sideA * this.sideB * this.sideC) / (4 * this.area())
