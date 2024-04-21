@@ -76,17 +76,56 @@ export default class Triangle {
   }
 
   /*
-  * Finds the type of triangle
+  * Calculates each angle of the triangle
   */
-  /*public getType(): string {
-
+  public angle(angleNumber: number): number {
+  let angleInDegrees: number
+  let angleInRadians: number
+    if (angleNumber === 1) {
+      angleInDegrees = Math.acos(
+        ((this.sideB ** 2) + (this.sideC ** 2) - (this.sideA ** 2))
+        / (2 * this.sideB * this.sideC)
+      )
+      angleInRadians = angleInDegrees * (Math.PI / 180)
+    } else if (angleNumber === 2) {
+      angleInDegrees = Math.acos(
+        ((this.sideC ** 2) + (this.sideA ** 2) - (this.sideB ** 2))
+        / (2 * this.sideC * this.sideA)
+      )
+      angleInRadians = angleInDegrees * (Math.PI / 180)
+    } else if (angleNumber === 3) {
+      angleInDegrees = Math.acos(
+        ((this.sideA ** 2) + (this.sideB ** 2) - (this.sideC ** 2))
+        / (2 * this.sideA * this.sideB)
+      )
+      angleInRadians = angleInDegrees * (Math.PI / 180)
+    }
+    return angleInRadians
   }
 
   /*
-  * Calculates each angle of the triangle
+  * Finds the type of triangle
   */
-  /*public angle(angleNumber: number): number {
-
+  public getType(): string {
+    let triangleType: string
+    if (this.sideA === this.sideB === this.sideC) {
+      triangleType = "equilateral triangle"
+    } else if (
+      this.angle(1) === (Math.PI / 2) ||
+      this.angle(2) === (Math.PI / 2) ||
+      this.angle(3) === (Math.PI / 2)
+    ) {
+      triangleType = "right angle triangle"
+    } else if (
+      this.sideA === this.sideB ||
+      this.sideB === this.sideC ||
+      this.sideC === this.sideA
+    ) {
+      triangleType = "isosceles triangle"
+    } else if (this.sideA != this.sideB != this.sideC) {
+      triangleType = "scalene triangle"
+    }
+    return triangleType
   }
 
   /*
