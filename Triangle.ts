@@ -104,22 +104,22 @@ export default class Triangle {
   */
   public getType(): string {
     let triangleType: string
-    if (this.sideA === this.sideB === this.sideC) {
-      triangleType = "equilateral triangle"
+    if (this.sideA == this.sideB == this.sideC) {
+      triangleType = "Equilateral triangle"
     } else if (
       this.angle(1) === (Math.PI / 2) ||
       this.angle(2) === (Math.PI / 2) ||
       this.angle(3) === (Math.PI / 2)
     ) {
-      triangleType = "right angle triangle"
+      triangleType = "Right angle triangle"
     } else if (
       this.sideA === this.sideB ||
       this.sideB === this.sideC ||
       this.sideC === this.sideA
     ) {
-      triangleType = "isosceles triangle"
+      triangleType = "Isosceles triangle"
     } else if (this.sideA != this.sideB != this.sideC) {
-      triangleType = "scalene triangle"
+      triangleType = "Scalene triangle"
     }
     return triangleType
   }
