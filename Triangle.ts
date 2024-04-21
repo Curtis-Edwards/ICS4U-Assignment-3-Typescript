@@ -67,8 +67,12 @@ export default class Triangle {
   /*
   * Calculates the area
   */
-  /*public area(): number {
-
+  public area(): number {
+    return Math.sqrt(semiPerimeter()
+      * (semiPerimeter() - this.sideA)
+      * (semiPerimeter() - this.sideB)
+      * (semiPerimeter() - this.sideC)
+    )
   }
 
   /*
