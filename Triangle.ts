@@ -58,17 +58,6 @@ export default class Triangle {
   }
 
   /*
-  * Calculates the semi-perimeter
-  */
-  public semiPerimeter(): number {
-    if (this.isValid() === false) {
-      return -1
-    } else {
-      return (this.sideA + this.sideB + this.sideC) / 2
-    }
-  }
-
-  /*
   * Calculates the area
   */
   public area(): number {
@@ -80,34 +69,6 @@ export default class Triangle {
         * (this.semiPerimeter() - this.sideB)
         * (this.semiPerimeter() - this.sideC)
       )
-    }
-  }
-
-  /*
-  * Calculates each angle of the triangle
-  */
-  public angle(angleNumber: number): number {
-    if (this.isValid() === false) {
-      return -1
-    } else {
-      let angle: number
-      if (angleNumber === 1) {
-        angle = Math.acos(
-          ((this.sideB ** 2) + (this.sideC ** 2) - (this.sideA ** 2))
-          / (2 * this.sideB * this.sideC)
-        )
-      } else if (angleNumber === 2) {
-        angle = Math.acos(
-          ((this.sideC ** 2) + (this.sideA ** 2) - (this.sideB ** 2))
-          / (2 * this.sideC * this.sideA)
-        )
-      } else if (angleNumber === 3) {
-        angle = Math.acos(
-          ((this.sideA ** 2) + (this.sideB ** 2) - (this.sideC ** 2))
-          / (2 * this.sideA * this.sideB)
-        )
-      }
-      return angle
     }
   }
 
@@ -141,6 +102,45 @@ export default class Triangle {
         triangleType = "Scalene triangle"
       }
       return triangleType
+    }
+  }
+
+  /*
+  * Calculates the semi-perimeter
+  */
+  public semiPerimeter(): number {
+    if (this.isValid() === false) {
+      return -1
+    } else {
+      return (this.sideA + this.sideB + this.sideC) / 2
+    }
+  }
+
+  /*
+  * Calculates each angle of the triangle
+  */
+  public angle(angleNumber: number): number {
+    if (this.isValid() === false) {
+      return -1
+    } else {
+      let angle: number
+      if (angleNumber === 1) {
+        angle = Math.acos(
+          ((this.sideB ** 2) + (this.sideC ** 2) - (this.sideA ** 2))
+          / (2 * this.sideB * this.sideC)
+        )
+      } else if (angleNumber === 2) {
+        angle = Math.acos(
+          ((this.sideC ** 2) + (this.sideA ** 2) - (this.sideB ** 2))
+          / (2 * this.sideC * this.sideA)
+        )
+      } else if (angleNumber === 3) {
+        angle = Math.acos(
+          ((this.sideA ** 2) + (this.sideB ** 2) - (this.sideC ** 2))
+          / (2 * this.sideA * this.sideB)
+        )
+      }
+      return angle
     }
   }
 
